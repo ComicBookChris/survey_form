@@ -1,0 +1,409 @@
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        label {
+            font-size: 40px;
+        }
+
+        div.background {
+            background: url(https://www.ctvscifi.ca/wp-content/uploads/2016/10/DC-vs-Marvel.jpg);
+            background-repeat: no-repeat, repeat;
+            background-size: cover;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.9;
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        <div class="background">
+            <div class="transbox">
+                <h1 id="title">Comicbook Survey</h1>
+                <p id="description">Who is your favorite comicbook characters, publisher, writer?
+                </p>
+                <form id="survey-form">
+                    <label id="name-label">
+                        Name:</label> <input type="text" name="name" id="name" required
+                        placeholder="first and last name"><br>
+                    <label id="email-label">
+                        Email:</label> <input type="email" name="email" id="email" required
+                        placeholder="your email address"><br>
+                    <label id="number-label">
+                        Age:</label> <input type="number" name="number" id="number" min="3" max="120" required
+                        placeholder="age">
+                    <br>
+                    <br>
+                    <input type="submit" id="submit">
+
+                    <br>
+                    <p>Please select three of your favorite characters from the dropdown menus below. </p>
+
+                    <label for="characters">DC and Marvel Comics characters:</label>
+
+                    <select id="dropdown" name="Superheroes">
+                        <option value="please select one">Please Select One</option>
+                        <option value="alan scott">Alan Scott</option>
+                        <option value="alfred pennyworth">Alfred PennyWorth</option>
+                        <option value="angel">Angel</option>
+                        <option value="arisia">Arisia</option>
+                        <option value="aquaman">Aquaman</option>
+                        <option value="barry allen">Barry Allen</option>
+                        <option value="bart allen">Bart Allen</option>
+                        <option value="batman">Batman</option>
+                        <option value="batwoman">Batwoman</option>
+                        <option value="beast">Beast</option>
+                        <option value="beast boy">Beast Boy</option>
+                        <option value="billy batson">Billy Batson</option>
+                        <option value="black canary">Black Canary</option>
+                        <option value="black cat">Black Cat</option>
+                        <option value="black lightning">Black Lightning</option>
+                        <option value="black panther">Black Panther</option>
+                        <option value="black widow">Black Widow</option>
+                        <option value="blue beetle">Blue Beetle (Reyes)</option>
+                        <option value="bucky barnes">Bucky Barnes</option>
+                        <option value="cable">Cable</option>
+                        <option value="captain america">Captain America</option>
+                        <option value="cassandra cain">Cassandra Cain</option>
+                        <option value="catwoman">Catwoman</option>
+                        <option value="cloak">Cloak</option>
+                        <option value="cyborg">Cybor</option>
+                        <option value="cyclops">Cyclops</option>
+                        <option value="dagger">Dagger</option>
+                        <option value="daredevil">Daredevil</option>
+                        <option value="darkhawk">Darkhawk</option>
+                        <option value="damian wayne">Damian Wayne</option>
+                        <option value="deadpool">Deadpool</option>
+                        <option value="dick grayson">Dick Grayson</option>
+                        <option value="doctor fate">Doctor Fate (Kent V. Nelson)</option>
+                        <option value="doctor strange">Doctor Strange</option>
+                        <option value="donna troy">Donna Troy</option>
+                        <option value="eddie brock">Eddie Brock</option>
+                        <option value="elektra">Elektra</option>
+                        <option value="emma frost">Emma Frost</option>
+                        <option value="firestorm">Firestorm</option>
+                        <option value="green arrow">Green Arrow</option>
+                        <option value="hal jordan">Hal Jordan</option>
+                        <option value="havok">Havok</option>
+                        <option value="hawkeye">Hawkeye</option>
+                        <option value="hawkgirl">Hawkgirl</option>
+                        <option value="hulk">Hulk</option>
+                        <option value="huntress">Huntress</option>
+                        <option value="iceman">Iceman</option>
+                        <option value="invisible woman">Invisible Woman</option>
+                        <option value="iron fist">Iron Fist</option>
+                        <option value="iron man">Iron Man</option>
+                        <option value="jade">Jade</option>
+                        <option value="james gordon">James Gordon</option>
+                        <option value="jason todd">Jason Todd</option>
+                        <option value="jay garrick">Jay Garrick</option>
+                        <option value="jean grey">Jean Grey</option>
+                        <option value="john stewart">John Stewart</option>
+                        <option value="kilowog">Kilowog</option>
+                        <option value="kitty pryde">Kitty Pryde</option>
+                        <option value="kyle rayner">Kyle Rayner</option>
+                        <option value="luke cage">Luke Cage</option>
+                        <option value="martian manhunter">Martian Manhunter</option>
+                        <option value="moon knight">Moon Knight</option>
+                        <option value="carol danvers">Carol Danvers</option>
+                        <option value="nick fury">Nick Fury</option>
+                        <option value="nightcrawler">Nightcrawler</option>
+                        <option value="nova">Nova</option>
+                        <option value="orion">Orion</option>
+                        <option value="power girl">Power Girl</option>
+                        <option value="professor x">Professor X</option>
+                        <option value="prowler">Prowler</option>
+                        <option value="question">Question (Sage)</option>
+                        <option value="quicksilver">Quicksilver</option>
+                        <option value="harley quinn">Harley Quinn</option>
+                        <option value="ray palmer">Ray Palmer</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="ben reilly">Ben Reilly</option>
+                        <option value="scarlet witch">Scarlet Witch</option>
+                        <option value="silver surfer">Silver Surfer</option>
+                        <option value="spider-man">Spider-Man</option>
+                        <option value="spider-woman">Spider-Woman</option>
+                        <option value="steel">Steel</option>
+                        <option value="storm">Storm</option>
+                        <option value="supergirl">Supergirl</option>
+                        <option value="superman">Superman</option>
+                        <option value="swamp thing">Swamp Thing</option>
+                        <option value="ted kord">Ted Kord</option>
+                        <option value="terry mcginnis">Terry McGinnis</option>
+                        <option value="thing">Thing</option>
+                        <option value="thor">Thor</option>
+                        <option value="tim drake">Tim Drake</option>
+                        <option value="u.s.agent">U.S.Agent</option>
+                        <option value="union jack">Union Jack</option>
+                        <option value="vision">Vision</option>
+                        <option value="wolverine">Wolverine</option>
+                        <option value="wonder woman">Wonder Woman</option>
+                        <option value="zatanna">Zatanna</option>
+                    </select>
+
+                    <select id="dropdown" name="Superheroes">
+                        <option value="please select one">Please Select One</option>
+                        <option value="alan scott">Alan Scott</option>
+                        <option value="alfred pennyworth">Alfred PennyWorth</option>
+                        <option value="angel">Angel</option>
+                        <option value="arisia">Arisia</option>
+                        <option value="aquaman">Aquaman</option>
+                        <option value="barry allen">Barry Allen</option>
+                        <option value="bart allen">Bart Allen</option>
+                        <option value="batman">Batman</option>
+                        <option value="batwoman">Batwoman</option>
+                        <option value="beast">Beast</option>
+                        <option value="beast boy">Beast Boy</option>
+                        <option value="billy batson">Billy Batson</option>
+                        <option value="black canary">Black Canary</option>
+                        <option value="black cat">Black Cat</option>
+                        <option value="black lightning">Black Lightning</option>
+                        <option value="black panther">Black Panther</option>
+                        <option value="black widow">Black Widow</option>
+                        <option value="blue beetle">Blue Beetle (Reyes)</option>
+                        <option value="bucky barnes">Bucky Barnes</option>
+                        <option value="cable">Cable</option>
+                        <option value="captain america">Captain America</option>
+                        <option value="cassandra cain">Cassandra Cain</option>
+                        <option value="catwoman">Catwoman</option>
+                        <option value="cloak">Cloak</option>
+                        <option value="cyborg">Cyborg</option>
+                        <option value="cyclops">Cyclops</option>
+                        <option value="dagger">Dagger</option>
+                        <option value="daredevil">Daredevil</option>
+                        <option value="darkhawk">Darkhawk</option>
+                        <option value="damian wayne">Damian Wayne</option>
+                        <option value="deadpool">Deadpool</option>
+                        <option value="dick grayson">Dick Grayson</option>
+                        <option value="doctor fate">Doctor Fate (Kent V. Nelson)</option>
+                        <option value="doctor strange">Doctor Strange</option>
+                        <option value="donna troy">Donna Troy</option>
+                        <option value="eddie brock">Eddie Brock</option>
+                        <option value="elektra">Elektra</option>
+                        <option value="emma frost">Emma Frost</option>
+                        <option value="firestorm">Firestorm</option>
+                        <option value="green arrow">Green Arrow</option>
+                        <option value="hal jordan">Hal Jordan</option>
+                        <option value="havok">Havok</option>
+                        <option value="hawkeye">Hawkeye</option>
+                        <option value="hawkgirl">Hawkgirl</option>
+                        <option value="hulk">Hulk</option>
+                        <option value="huntress">Huntress</option>
+                        <option value="iceman">Iceman</option>
+                        <option value="invisible woman">Invisible Woman</option>
+                        <option value="iron fist">Iron Fist</option>
+                        <option value="iron man">Iron Man</option>
+                        <option value="jade">Jade</option>
+                        <option value="james gordon">James Gordon</option>
+                        <option value="jason todd">Jason Todd</option>
+                        <option value="jay garrick">Jay Garrick</option>
+                        <option value="jean grey">Jean Grey</option>
+                        <option value="john stewart">John Stewart</option>
+                        <option value="kilowog">Kilowog</option>
+                        <option value="kitty pryde">Kitty Pryde</option>
+                        <option value="kyle rayner">Kyle Rayner</option>
+                        <option value="luke cage">Luke Cage</option>
+                        <option value="martian manhunter">Martian Manhunter</option>
+                        <option value="moon knight">Moon Knight</option>
+                        <option value="carol danvers">Carol Danvers</option>
+                        <option value="nick fury">Nick Fury</option>
+                        <option value="nightcrawler">Nightcrawler</option>
+                        <option value="nova">Nova</option>
+                        <option value="orion">Orion</option>
+                        <option value="power girl">Power Girl</option>
+                        <option value="professor x">Professor X</option>
+                        <option value="prowler">Prowler</option>
+                        <option value="question">Question (Sage)</option>
+                        <option value="quicksilver">Quicksilver</option>
+                        <option value="harley quinn">Harley Quinn</option>
+                        <option value="ray palmer">Ray Palmer</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="ben reilly">Ben Reilly</option>
+                        <option value="scarlet witch">Scarlet Witch</option>
+                        <option value="silver surfer">Silver Surfer</option>
+                        <option value="spider-man">Spider-Man</option>
+                        <option value="spider-woman">Spider-Woman</option>
+                        <option value="steel">Steel</option>
+                        <option value="storm">Storm</option>
+                        <option value="supergirl">Supergirl</option>
+                        <option value="superman">Superman</option>
+                        <option value="swamp thing">Swamp Thing</option>
+                        <option value="ted kord">Ted Kord</option>
+                        <option value="terry mcginnis">Terry McGinnis</option>
+                        <option value="thing">Thing</option>
+                        <option value="thor">Thor</option>
+                        <option value="tim drake">Tim Drake</option>
+                        <option value="u.s.agent">U.S.Agent</option>
+                        <option value="union jack">Union Jack</option>
+                        <option value="vision">Vision</option>
+                        <option value="wolverine">Wolverine</option>
+                        <option value="wonder woman">Wonder Woman</option>
+                        <option value="zatanna">Zatanna</option>
+                    </select>
+
+                    <select id="dropdown" name="Superheroes">
+                        <option value="please select one">Please Select One</option>
+                        <option value="alan scott">Alan Scott</option>
+                        <option value="alfred pennyworth">Alfred PennyWorth</option>
+                        <option value="angel">Angel</option>
+                        <option value="arisia">Arisia</option>
+                        <option value="aquaman">Aquaman</option>
+                        <option value="barry allen">Barry Allen</option>
+                        <option value="bart allen">Bart Allen</option>
+                        <option value="batman">Batman</option>
+                        <option value="batwoman">Batwoman</option>
+                        <option value="beast">Beast</option>
+                        <option value="beast boy">Beast Boy</option>
+                        <option value="billy batson">Billy Batson</option>
+                        <option value="black canary">Black Canary</option>
+                        <option value="black cat">Black Cat</option>
+                        <option value="black lightning">Black Lightning</option>
+                        <option value="black panther">Black Panther</option>
+                        <option value="black widow">Black Widow</option>
+                        <option value="blue beetle">Blue Beetle (Reyes)</option>
+                        <option value="bucky barnes">Bucky Barnes</option>
+                        <option value="cable">Cable</option>
+                        <option value="captain america">Captain America</option>
+                        <option value="cassandra cain">Cassandra Cain</option>
+                        <option value="catwoman">Catwoman</option>
+                        <option value="cloak">Cloak</option>
+                        <option value="cyborg">Cyborg</option>
+                        <option value="cyclops">Cyclops</option>
+                        <option value="dagger">Dagger</option>
+                        <option value="daredevil">Daredevil</option>
+                        <option value="darkhawk">Darkhawk</option>
+                        <option value="damian wayne">Damian Wayne</option>
+                        <option value="deadpool">Deadpool</option>
+                        <option value="dick grayson">Dick Grayson</option>
+                        <option value="doctor fate">Doctor Fate (Kent V. Nelson)</option>
+                        <option value="doctor strange">Doctor Strange</option>
+                        <option value="donna troy">Donna Troy</option>
+                        <option value="eddie brock">Eddie Brock</option>
+                        <option value="elektra">Elektra</option>
+                        <option value="emma frost">Emma Frost</option>
+                        <option value="firestorm">Firestorm</option>
+                        <option value="green arrow">Green Arrow</option>
+                        <option value="hal jordan">Hal Jordan</option>
+                        <option value="havok">Havok</option>
+                        <option value="hawkeye">Hawkeye</option>
+                        <option value="hawkgirl">Hawkgirl</option>
+                        <option value="hulk">Hulk</option>
+                        <option value="huntress">Huntress</option>
+                        <option value="iceman">Iceman</option>
+                        <option value="invisible woman">Invisible Woman</option>
+                        <option value="iron fist">Iron Fist</option>
+                        <option value="iron man">Iron Man</option>
+                        <option value="jade">Jade</option>
+                        <option value="james gordon">James Gordon</option>
+                        <option value="jason todd">Jason Todd</option>
+                        <option value="jay garrick">Jay Garrick</option>
+                        <option value="jean grey">Jean Grey</option>
+                        <option value="john stewart">John Stewart</option>
+                        <option value="kilowog">Kilowog</option>
+                        <option value="kitty pryde">Kitty Pryde</option>
+                        <option value="kyle rayner">Kyle Rayner</option>
+                        <option value="luke cage">Luke Cage</option>
+                        <option value="martian manhunter">Martian Manhunter</option>
+                        <option value="moon knight">Moon Knight</option>
+                        <option value="carol danvers">Carol Danvers</option>
+                        <option value="nick fury">Nick Fury</option>
+                        <option value="nightcrawler">Nightcrawler</option>
+                        <option value="nova">Nova</option>
+                        <option value="orion">Orion</option>
+                        <option value="power girl">Power Girl</option>
+                        <option value="professor x">Professor X</option>
+                        <option value="prowler">Prowler</option>
+                        <option value="question">Question (Sage)</option>
+                        <option value="quicksilver">Quicksilver</option>
+                        <option value="harley quinn">Harley Quinn</option>
+                        <option value="ray palmer">Ray Palmer</option>
+                        <option value="rogue">Rogue</option>
+                        <option value="ben reilly">Ben Reilly</option>
+                        <option value="scarlet witch">Scarlet Witch</option>
+                        <option value="silver surfer">Silver Surfer</option>
+                        <option value="spider-man">Spider-Man</option>
+                        <option value="spider-woman">Spider-Woman</option>
+                        <option value="steel">Steel</option>
+                        <option value="storm">Storm</option>
+                        <option value="supergirl">Supergirl</option>
+                        <option value="superman">Superman</option>
+                        <option value="swamp thing">Swamp Thing</option>
+                        <option value="ted kord">Ted Kord</option>
+                        <option value="terry mcginnis">Terry McGinnis</option>
+                        <option value="thing">Thing</option>
+                        <option value="thor">Thor</option>
+                        <option value="tim drake">Tim Drake</option>
+                        <option value="u.s.agent">U.S.Agent</option>
+                        <option value="union jack">Union Jack</option>
+                        <option value="vision">Vision</option>
+                        <option value="wolverine">Wolverine</option>
+                        <option value="wonder woman">Wonder Woman</option>
+                        <option value="zatanna">Zatanna</option>
+                    </select>
+
+
+
+
+                    <br>
+                    <p>Which of the following is your favorite comicbook publisher?</p>
+                    <input type="radio" id="dc" name="comicbook publisher" value="dc">
+                    <label for="dc">DC Comics</label><br>
+                    <input type="radio" id="Marvel" name="comicbook publisher" value="Marvel">
+                    <label for="Marvel">Marvel Comics</label><br>
+                    <input type="radio" id="other" name="comicbook publisher" value="other">
+                    <label for="other">Other</label>
+                    </br>
+
+                    <br>
+                    <p>From the following, which is your favorite comicbook writer/s? Pick all those that apply.</p>
+                    <input type="checkbox" id="writer1" name="writer1" value="Moore">
+                    <label for="writer1"> Alan Moore</label><br>
+                    <input type="checkbox" id="writer2" name="writer2" value="Hamilton">
+                    <label for="writer2"> Edmond Hamilton</label><br>
+                    <input type="checkbox" id="writer3" name="writer3" value="Fox">
+                    <label for="writer3"> Gardner Fox</label><br>
+                    <input type="checkbox" id="writer4" name="writer4" value="Kirby">
+                    <label for="writer4"> Jack Kirby</label><br>
+                    <input type="checkbox" id="writer5" name="writer5" value="Shooter">
+                    <label for="writer5"> Jim Shooter</label><br>
+                    <input type="checkbox" id="writer6" name="writer6" value="Gill">
+                    <label for="writer6"> Joe Gill</label><br>
+                    <input type="checkbox" id="writer7" name="writer7" value="Byrne">
+                    <label for="writer7"> John Byrne</label><br>
+                    <input type="checkbox" id="writer8" name="writer8" value="Binder">
+                    <label for="writer8"> Otto Binder</label><br>
+                    <input type="checkbox" id="writer9" name="writer9" value="Lee">
+                    <label for="writer9"> Stan Lee</label><br>
+
+                    <br>
+                    <p>Feel free to elaborate on your thoughts.</p>
+                    <textarea placeholder="additional comments"></textarea>
+                    <center><input type="submit" id="submit"></center>
+
+                </form>
+                <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+                </script>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
